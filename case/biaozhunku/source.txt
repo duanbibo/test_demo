@@ -1,0 +1,25 @@
+# encoding=utf-8   Help on built-in function callable in module builtins:
+
+callable(obj, /)
+    Return whether the object is callable (i.e., some kind of function).
+    
+    Note that classes are callable, as are instances of classes with a
+    __call__() method.
+
+Traceback (most recent call last):
+  File "C:/Users/87842/PycharmProjects/test_demo/case/biaozhunku/yichang.py", line 63, in <module>
+    raise  MyExcept()
+MyExcept: 超过输入长度限制
+Traceback (most recent call last):
+  File "C:/Users/87842/PycharmProjects/test_demo/case/biaozhunku/yichang.py", line 63, in <module>
+    raise  MyExcept()
+MyExcept: 超过输入长度限制
+Traceback (most recent call last):
+  File "C:/Users/87842/PycharmProjects/test_demo/case/biaozhunku/yichang.py", line 63, in <module>
+    raise  MyExcept()
+MyExcept: 超过输入长度限制
+Traceback (most recent call last):
+  File "C:/Users/87842/PycharmProjects/test_demo/case/biaozhunku/yichang.py", line 63, in <module>
+    raise  MyExcept()
+MyExcept: 超过输入长度限制  -1
+追加的内容追加的内容追加的内容追加的内容

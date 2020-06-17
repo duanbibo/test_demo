@@ -57,15 +57,23 @@ d={
         ]
 }
 
+
+#jsonpath  输出的结果都是list
 res= d["stu_info"][1]['name'] #取某个学生姓名的原始方法:通过查找字典中的key以及list方法中的下标索引
 print(res) #输出结果是：小黑
 
+
+
+res0=jsonpath.jsonpath(d,'$..gold')  # $.. 可以进行模糊匹配。能够匹配到子级更下级,模糊匹配可以多个。
+print(res0)
+
 import jsonpath
-res1=jsonpath.jsonpath(d,'$..name') #嵌套n层也能取到所有学生姓名信息,$表示最外层的{}，..表示模糊匹配
+res1=jsonpath.jsonpath(d,'$...name') #嵌套n层也能取到所有学生姓名信息,$表示最外层的{}，..表示模糊匹配
 print(res1) #输出结果是list：['小白', '小黑']
 
 res2= jsonpath.jsonpath(d,'$..bank_name')
 print(res2) #输出结果是list：['中国银行']
+print(type(res2))
 
 res3=jsonpath.jsonpath(d,'$..name123') #当传入不存在的key(name)时,返回False
 print(res3) #输出结果是：False

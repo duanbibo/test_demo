@@ -29,6 +29,7 @@ class TestRq(unittest.TestCase):
       assert "access_token" in result.json()
       token = result.json().get("access_token")
       print(token)
+
 if __name__ == '__main__':
 
        print("11111111")

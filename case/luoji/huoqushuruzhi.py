@@ -31,7 +31,7 @@ def gouwu():
       buy={}
       paymoney={}
       while True:
-         jine=input("请输入存钱金额")
+         jine=input("请输入存钱金额:")
          if jine.isdigit() and 0< int(jine):
             print("存钱成功，存入%s元" % jine)
             break

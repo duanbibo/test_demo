@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/Desktop/PDF/测试开发/Demo" />
+    <content url="file://$USER_HOME$/Desktop/Work/python/ApiTestFrameWork" />
+    <content url="file://$USER_HOME$/Desktop/Work/web" />
+    <content url="file://$USER_HOME$/Desktop/uiTest" />
+    <content url="file://$MODULE_DIR$/../TestDjango" />
+    <content url="file://$MODULE_DIR$/../appium" />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
@@ -8,6 +14,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
-    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+    <option name="projectConfiguration" value="pytest" />
+    <option name="PROJECT_TEST_RUNNER" value="pytest" />
   </component>
 </module>

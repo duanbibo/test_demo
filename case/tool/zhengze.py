@@ -77,3 +77,8 @@ def checkPhone(str):
       return res
 
 print(checkPhone("15688888888"))
+
+strzhongwen= 'dexclusive:0,"name":"初诊","note":'
+ze='"name":"(.+?)",'
+a=re.match(ze,strzhongwen)
+print(a)
