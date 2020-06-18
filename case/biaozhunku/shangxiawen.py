@@ -55,9 +55,9 @@ with open('source.txt','a',encoding='utf-8')as f:
 @contextmanager
 def  con():
       print("开始")
-      msg=""
+      msg=" finally部分"
       try:
-            yield  9
+            yield  5
       except ZeroDivisionError:
             msg="0不能当除数"
       finally:
@@ -69,7 +69,9 @@ with con() as c:
       print(c)
 
 
-''''''
+'''
+else从句 不仅能和if 结合，也可以与 while，for except 进行一起使用
+'''
 
 
 
