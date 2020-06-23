@@ -15,6 +15,11 @@ def creatgn():
       for i  in range(0,10):
             yield i*i
 a=creatgn()
+
+print(a,dir(a))
+# 生成器返回的是一个生成器对象，必须放入for循环内，才能一次获取执行
+#生成器主要的内置方法:send ,throw ,__next__ ,__iter__
+#print(a.__next__(),a.__next__(),a.__next__())
 for i  in a:
       print(i,"yield")
 
@@ -38,6 +43,19 @@ def squared(x):
 multiples = [squared(i) for i in range(30) if i % 3 is 0]
 print (multiples)
 
+
+'''   range() 迭代器,
+python2  返回一个 list
+python3 返回为一个 迭代器'''
+for i in range(1,10):
+      pass
+
+
+''' 利用zip和dict工厂函数，将两个长度相同的列表或者元祖组合为一个字典'''
+l1=[1,2,3,45]
+l2=[0,9,8,7]
+z=zip(l1,l2)
+print(dict(z))
 
 
 

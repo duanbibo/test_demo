@@ -1,0 +1,100 @@
+#encoding= utf-8
+2020-05-26 23:30:03 base.py[line:166] INFO Scheduler started
+2020-05-26 23:30:41 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-26 23:30:41 base.py[line:881] INFO Added job "write" to job store "default"
+2020-05-26 23:30:41 base.py[line:166] INFO Scheduler started
+2020-05-26 23:30:43 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:30:43 CST)" (scheduled at 2020-05-26 23:30:43.983371+08:00)
+2020-05-26 23:30:43 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:30:45 CST)" executed successfully
+2020-05-26 23:30:45 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:30:45 CST)" (scheduled at 2020-05-26 23:30:45.983371+08:00)
+2020-05-26 23:30:45 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:30:47 CST)" executed successfully
+2020-05-26 23:30:47 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:30:47 CST)" (scheduled at 2020-05-26 23:30:47.983371+08:00)
+2020-05-26 23:30:47 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:30:49 CST)" executed successfully
+2020-05-26 23:30:49 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:30:49 CST)" (scheduled at 2020-05-26 23:30:49.983371+08:00)
+2020-05-26 23:30:49 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:30:49 CST)" executed successfully
+2020-05-26 23:37:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-26 23:37:38 base.py[line:833] ERROR Error notifying listener
+Traceback (most recent call last):
+  File "C:\Users\87842\AppData\Local\Programs\Python\Python36\lib\site-packages\apscheduler\schedulers\base.py", line 831, in _dispatch_event
+    cb(event)
+  File "C:/Users/87842/PycharmProjects/test_demo/case/dingshi/sched.py", line 35, in my_listen
+    if event.EVENT_JOB_ADDED:
+AttributeError: 'JobEvent' object has no attribute 'EVENT_JOB_ADDED'
+2020-05-26 23:37:38 base.py[line:881] INFO Added job "write" to job store "default"
+2020-05-26 23:37:38 base.py[line:166] INFO Scheduler started
+2020-05-26 23:37:40 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:37:40 CST)" (scheduled at 2020-05-26 23:37:40.256981+08:00)
+2020-05-26 23:37:40 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:37:42 CST)" executed successfully
+2020-05-26 23:37:40 base.py[line:833] ERROR Error notifying listener
+Traceback (most recent call last):
+  File "C:\Users\87842\AppData\Local\Programs\Python\Python36\lib\site-packages\apscheduler\schedulers\base.py", line 831, in _dispatch_event
+    cb(event)
+  File "C:/Users/87842/PycharmProjects/test_demo/case/dingshi/sched.py", line 35, in my_listen
+    if event.EVENT_JOB_ADDED:
+AttributeError: 'JobExecutionEvent' object has no attribute 'EVENT_JOB_ADDED'
+2020-05-26 23:37:42 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:37:42 CST)" (scheduled at 2020-05-26 23:37:42.256981+08:00)
+2020-05-26 23:37:42 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:37:42 CST)" executed successfully
+2020-05-26 23:37:42 base.py[line:833] ERROR Error notifying listener
+Traceback (most recent call last):
+  File "C:\Users\87842\AppData\Local\Programs\Python\Python36\lib\site-packages\apscheduler\schedulers\base.py", line 831, in _dispatch_event
+    cb(event)
+  File "C:/Users/87842/PycharmProjects/test_demo/case/dingshi/sched.py", line 35, in my_listen
+    if event.EVENT_JOB_ADDED:
+AttributeError: 'JobExecutionEvent' object has no attribute 'EVENT_JOB_ADDED'
+2020-05-26 23:37:44 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:37:44 CST)" (scheduled at 2020-05-26 23:37:44.256981+08:00)
+2020-05-26 23:37:44 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:37:46 CST)" executed successfully
+2020-05-26 23:37:44 base.py[line:833] ERROR Error notifying listener
+Traceback (most recent call last):
+  File "C:\Users\87842\AppData\Local\Programs\Python\Python36\lib\site-packages\apscheduler\schedulers\base.py", line 831, in _dispatch_event
+    cb(event)
+  File "C:/Users/87842/PycharmProjects/test_demo/case/dingshi/sched.py", line 35, in my_listen
+    if event.EVENT_JOB_ADDED:
+AttributeError: 'JobExecutionEvent' object has no attribute 'EVENT_JOB_ADDED'
+2020-05-26 23:37:46 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:37:46 CST)" (scheduled at 2020-05-26 23:37:46.256981+08:00)
+2020-05-26 23:37:46 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:37:46 CST)" executed successfully
+2020-05-26 23:37:46 base.py[line:833] ERROR Error notifying listener
+Traceback (most recent call last):
+  File "C:\Users\87842\AppData\Local\Programs\Python\Python36\lib\site-packages\apscheduler\schedulers\base.py", line 831, in _dispatch_event
+    cb(event)
+  File "C:/Users/87842/PycharmProjects/test_demo/case/dingshi/sched.py", line 35, in my_listen
+    if event.EVENT_JOB_ADDED:
+AttributeError: 'JobExecutionEvent' object has no attribute 'EVENT_JOB_ADDED'
+2020-05-26 23:39:35 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-26 23:39:35 base.py[line:881] INFO Added job "write" to job store "default"
+2020-05-26 23:39:35 base.py[line:166] INFO Scheduler started
+2020-05-26 23:39:37 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:39:37 CST)" (scheduled at 2020-05-26 23:39:37.696798+08:00)
+2020-05-26 23:39:37 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:39:39 CST)" executed successfully
+2020-05-26 23:39:39 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:39:39 CST)" (scheduled at 2020-05-26 23:39:39.696798+08:00)
+2020-05-26 23:39:39 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:39:41 CST)" executed successfully
+2020-05-26 23:41:37 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-26 23:41:37 base.py[line:881] INFO Added job "write" to job store "default"
+2020-05-26 23:41:37 base.py[line:166] INFO Scheduler started
+2020-05-26 23:41:39 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:41:39 CST)" (scheduled at 2020-05-26 23:41:39.810928+08:00)
+2020-05-26 23:41:39 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:41:41 CST)" executed successfully
+2020-05-26 23:41:41 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:41:41 CST)" (scheduled at 2020-05-26 23:41:41.810928+08:00)
+2020-05-26 23:41:41 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:41:41 CST)" executed successfully
+2020-05-26 23:41:43 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:41:43 CST)" (scheduled at 2020-05-26 23:41:43.810928+08:00)
+2020-05-26 23:41:43 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:41:45 CST)" executed successfully
+2020-05-26 23:41:45 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:41:45 CST)" (scheduled at 2020-05-26 23:41:45.810928+08:00)
+2020-05-26 23:41:45 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-26 23:41:45 CST)" executed successfully
+2020-05-27 11:01:57 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-27 11:01:57 sched.py[line:37] INFO ��־��ҵ��ӳɹ�
+2020-05-27 11:01:57 base.py[line:881] INFO Added job "write" to job store "default"
+2020-05-27 11:01:57 base.py[line:166] INFO Scheduler started
+2020-05-27 11:01:59 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:01:59 CST)" (scheduled at 2020-05-27 11:01:59.881103+08:00)
+2020-05-27 11:01:59 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:01 CST)" executed successfully
+2020-05-27 11:01:59 sched.py[line:40] INFO ��־��ҵִ�г�
+2020-05-27 11:02:01 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:01 CST)" (scheduled at 2020-05-27 11:02:01.881103+08:00)
+2020-05-27 11:02:01 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:03 CST)" executed successfully
+2020-05-27 11:02:01 sched.py[line:40] INFO ��־��ҵִ�г�
+2020-05-27 11:02:03 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:03 CST)" (scheduled at 2020-05-27 11:02:03.881103+08:00)
+2020-05-27 11:02:03 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:03 CST)" executed successfully
+2020-05-27 11:02:03 sched.py[line:40] INFO ��־��ҵִ�г�
+2020-05-27 11:02:05 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:05 CST)" (scheduled at 2020-05-27 11:02:05.881103+08:00)
+2020-05-27 11:02:05 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:05 CST)" executed successfully
+2020-05-27 11:02:05 sched.py[line:40] INFO ��־��ҵִ�г�
+2020-05-27 11:02:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-27 11:02:48 sched.py[line:37] INFO ��־��ҵ���ӳɹ�
+2020-05-27 11:02:48 base.py[line:881] INFO Added job "write" to job store "default"
+2020-05-27 11:02:48 base.py[line:166] INFO Scheduler started
+2020-05-27 11:02:50 base.py[line:123] INFO Running job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:50 CST)" (scheduled at 2020-05-27 11:02:50.500931+08:00)
+2020-05-27 11:02:50 base.py[line:144] INFO Job "write (trigger: interval[0:00:02], next run at: 2020-05-27 11:02:52 CST)" executed successfully
+2020-05-27 11:02:50 sched.py[line:40] INFO ��־��ҵִ�г�

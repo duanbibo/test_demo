@@ -1,0 +1,35 @@
+
+config:
+    name:  test kuaidi100 api
+    request:
+        base_url: https://api.xinzhili.cn
+
+testcases:
+-
+  test:
+     name:  测试登录
+     request:
+        url: v0/oauth/token
+        method: POST
+        headers:
+            Authorization: Basic ZG9jdG9yX3dlYjo=
+        data:
+            username: 18903719017
+            password: 111111
+            grant_type: password
+     validate:
+         - eq: [status_code, 200]
+     extract:
+         - token: access_token
+
+
+#- test:
+#    name: test kuaidi100 one
+#    parameters:
+#        - postid: ${get_number(4)}
+#    request:
+#        url: /query
+#        method: GET
+#        params:
+#            type: huitongkuaidi
+#            postid: $postid

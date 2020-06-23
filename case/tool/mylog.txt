@@ -1,0 +1,3 @@
+2020-05-27 11:21:40,314 - C:/Users/87842/PycharmProjects/test_demo/case/tool/logi.py[line:27] - DEBUG: 调试
+2020-06-12 18:13:08,216 - C:/Users/87842/PycharmProjects/test_demo/case/tool/logi.py[line:27] - DEBUG: 调试
+2020-06-12 18:18:41,864 - C:/Users/87842/PycharmProjects/test_demo/case/tool/logi.py[line:27] - DEBUG: 调试

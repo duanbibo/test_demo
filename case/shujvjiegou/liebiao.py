@@ -2,8 +2,14 @@
 list1=[1,2,3,4,5,6,8,9]
 #列表追加append方式，可以追加任意类型,相当于将内容当做一个整体了
 list1.append([8,9])
-print(list1)
-#extend方式追加，只能追加能够迭代的类型，如字符串，元祖，列表等
+list1.extend([3,4])  # extend 将可迭代对象依次进行添加类型，如字符串，元祖，列表等
+listv=[1,2,3,4,9]
+
+tuplev=('a','1ab','c','o')
+print(max(listv))#求列表中最大值
+print(min(tuplev))#求元祖中最大值,必须保证类型相同
+print(list1) #list列表内的元素是可重复的
+print(list1.count(3)) #求列表内元素出现的次数
 list1.extend([7,8,9])
 print(list1)
 #移除元素，使用remove时，采用的是列表的值，不需要双引号
@@ -25,7 +31,7 @@ print(s2,)
 '''
 列表和元祖的区别
  1.列表是可变的，元祖是不可变的
- 2.声明同一个数据，用列表存储和用元祖存储大小是不一样的。元祖占用空间小，处理块
+ 2.声明同一个数据，用列表存储和用元祖存储大小是不一样的。元祖占用空间小，处理快
  3.列表中一般存储同质同类型数据，元祖一般存储异质不同类型的数据
      [1,2,3,4](1,zhangsan,24,[daxue])
  4.由于可变和不可变原因。元祖在存储上是安全的
@@ -36,6 +42,13 @@ print(tp.count('4'))
 #求字符出现的位置，索引 index(value,start,end)
 print(tp.index(3))  #在全局范围内查找，单个元素的索引
 print(tp.index('4',2,7))#在指定范围内查找，单个元素的索引，只匹配第一个。
+
+
+''' 列表或者元祖的格式化'''
+litu=[ 0,1,2,3,4]
+print("{},{},{},{},{}".format(*litu))
+
+
 
 
 list7=[4,5,6]
@@ -62,17 +75,43 @@ print("根据列表值和下标生成的列表1是：%s"%ziplist)
 list10=[]
 for i in range(0,len(list8)):
       list10.append(i)
+list8.append(99)
+list10.append(00)
 dic2=dict(zip(list8,list10))
-print("字典2是：%s"%dic2)
+print("字典2是：%s"%dic2)  #将2个列表压缩，一个列表所有内容做key,一个做value.必须要求key和value都有
+'''set 集合'''
 
+set1={"1",'2',5}
+
+print(set1,"-------------------------",type(set1))
 print(set(zip(dic1,dic2)))
 set2=set(zip(list8,list10))
 print("根据列表值和下标生成的元祖1是：%s"%set2)
 
 li=[12,45,67]
+
 l=[12,34]
 setsame=set(li).intersection(set(l))
 setunion=set(li).union(set(l))
 setdiff=set(li).difference(set(l))
 print(list(setsame),list(setunion),list(setdiff))
 
+''' 列表推导式'''
+
+tui=[x*x for x in range(11)]     #普通的列表推导式
+tui1=[ x*x  for  x  in range(11) if  x%3==0]   #加过滤的列表推导式
+tui2=[x*x if x%3==0 else x+3 for x in range(11)]   #进行三目运算的列表推导式
+value2=list(map( lambda x:x*x   ,filter( lambda  x:x%3==0,range(11))  )    )  #加过滤的map ，和列表推导式一样
+#两层循环的列表推导式
+i=['a','b']
+f=[1,2,3]
+shuang=[[a,b]for a in i for b in f]
+print(shuang,"2层循环的")
+
+c=[1,2,[3,4],6]
+c[-2].append('5')  #在列表的最后一项内部追加个元素
+c.append('7')
+print(c)
+
+for i in range(10): #生成器
+      print(i)

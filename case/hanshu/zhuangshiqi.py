@@ -29,22 +29,35 @@ import time
 
 '''
 def score(func_s):
+      print("装饰器定义后直接执行")
+      sc=[]
       def wrapper(b):
+            nonlocal sc
             if b<0:
-                  print("您输入的成绩错误")
+                  sc.append("输入错误")
+                 # print(sc)
             elif b <60:
-                  print("您的成绩是 %d 分，不及格"%b)
+                  sc.append(b)
+                  print("您的成绩是{}分，不及格".format(sc[0]))
             elif b<=80:
+                  sc.append(b)
                   print("您的成绩是 %d 分，及格"%b)
             else:
+                  sc.append(b)
                   print("您的成绩是 %d 分，恭喜你"%b)
-            func_s(b)
+            func_s(b)  #在内函数通过  函数（参数），退出返回到被装饰的函数中，去执行剩余部分。
+            print("继续执行装饰器操作")
       return wrapper
 
 
 @score
 def func_y(b):
-      pass
+      print("回到原函数内部执行",b)
+
+b = int(input("请输入你的成绩："))
+#func_y(b)
+
+print("----------------------")
 ''' ----- --------------------'''
 def func(a, b):
     def line(x):
@@ -54,7 +67,7 @@ def func(a, b):
     return line
 
 
-print(func(2, 3)(4))
+print(func(2, 3)(4))  #5
 '''-------- --------------- ---------'''
 
 def zhuangshiqi(hanshu):
@@ -63,61 +76,41 @@ def zhuangshiqi(hanshu):
                   print("erro")
             else:
                   print("good")
-            hanshu(canshu)
+            return hanshu(canshu)
 
       return neibu
 
 @zhuangshiqi
 def a(wang):
-      wang+4
-
+      print("xxx")
       pass
 
-
-def get_x(z, b):
-    return lambda x:z+b
-z = get_x(1, 3)
-
-print(z('x'))      #5,4
+#a(100)
 
 
+import time
+def zhuang(c):
+      def f(func):
+            def inner(*args,**kwargs):
+                  time.sleep(c)
+                  print('可以调用装饰器的参数,暂停%s秒执行'%c)
+                  return func(*args,**kwargs)
+            return inner
+      return f
 
-if __name__ == '__main__':
-      b = int(input("请输入你的成绩："))
-      func_y(b)
-      a(101)
+@zhuang(8)
+def daicanshu(cs):
+      pass
+#调用
+daicanshu('xx')
 
 
-
-
-# @runtime
-# def func_a(a):
-#     print("hello"+a)
-#     time.sleep(0.5)
-
-
-# if __name__ == '__main__':
-#     #func_a("a")
-#     func_s()
-
-# def test(func1):
-#     def test_in():
-#         print("testing")
-#         func1()
-#     return test_in
-#
-# def f1():
-#     print("---f1----")
-#
-# f1=test(f1)
-# f1()
-#
-# b=2
-# b+=3
-# del b
-# print(b)
-# 解析如下：
-#
-# 1.  test(f1)  有两层关系 1. f1 代表是 f1函数名的指针当作参数传入 test()  , 2. test(f1) 代表 返回test_in 函数指针
-# 2. f1=test（f1） 把test_in 函数指针赋值给 f1  ,f1 的函数指针 有 指向 print（“----f1----"）变成了test_in里的函数体
-# 3. f1() 执行test_in 里的函数体
+def logging(level):
+    def wrapper(func):
+        def inner_wrapper(*args, **kwargs):
+            print ("[{level}]: enter function {func}()".format(
+                level=level,
+                func=func.__name__))
+            return func(*args, **kwargs)
+        return inner_wrapper
+    return wrapper

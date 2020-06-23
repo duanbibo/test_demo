@@ -7,13 +7,16 @@ import copy
     Python中对象的赋值都是进行对象引用（内存地址）传递
     
     
-　b=a[:] /b=a.copy() 2. 浅拷贝是在另一块地址中创建一个新的变量或容器，
+　   b=a[:] /b=a.copy()  切片也属于浅拷贝。
+2. 浅拷贝是在另一块地址中创建一个新的变量或容器，
            但是容器内的元素的地址均是源对象的元素的地址的拷贝。也就是说新的容器中指向了旧的元素（新瓶装旧酒）。
          浅拷贝 只拷贝父对象，不会拷贝对象的内部的子对象,即内部对象做了新增后不会拷贝过来。
          如果内部有 可变对象，如列表、字典之类的，原对象做了变化后，copy对象会变化。
          对于内部为可变类型的对象而言，他们是绝对引用
+           
      
-　 b=copy.deepcopy(a) 3. 深拷贝是在另一块地址中创建一个新的变量或容器，
+　 b=copy.deepcopy(a) 
+3. 深拷贝是在另一块地址中创建一个新的变量或容器，
              同时容器内的元素的地址也是新开辟的，仅仅是值相同而已，是完全的副本。也就是说（新瓶装新酒）。
               深拷贝 拷贝对象及其子对象，拷贝后原对象做任何变化，copy的对象都不会做变化。
               
@@ -28,7 +31,7 @@ import copy
 Python中对象的赋值都是进行对象引用（内存地址）传递
 使用copy.copy()，可以进行对象的浅拷贝，它复制了对象，但对于对象中的元素，依然使用原始的引用.
 如果需要复制一个容器对象，以及它里面的所有元素（包含元素的子元素），可以使用copy.deepcopy()进行深拷贝
-对于非容器类型（如数字、字符串、和其他'原子'类型的对象）没有被拷贝一说
+对于非容器类型（如数字、字符串、和其他'原子'类型的对象）没有被拷贝一说，因为他们每次创建都是同一个地址值。
 如果元祖变量只包含原子类型对象，则不能深拷贝。
 '''
 '''
@@ -38,11 +41,13 @@ Python中对象的赋值都是进行对象引用（内存地址）传递
       然后再将地址赋给a, b, c。所以它们的地址是相同的。
       如果a重新赋值的话，只改变a值，b、c不变，
       hello的内存仍指向b、c.取消a的指向
+ 平衡赋值：  a,b= b,a     
+ 
       '''
 a = 'hello'
 b = 'hello'
 c = a
-
+''' 不可变类型的，只要里面的元素一致，他们的地址值都一致'''
 print(id(a),id(b) ,id(c))
 print(a is b,b is c ,a is c)
 
@@ -50,36 +55,32 @@ print(a is b,b is c ,a is c)
 
 
 '''
-l1!= l2 ,因为list是可变类型的，
-在创建变量l2的时候，重新创建了个对象，l3指向l2
-如果l2 进行改变后，l3也跟着改变。
+可变类型，每次创建后他们的值都不相同。所以才有浅copy，深copy一说。
+l3= l1,是赋值引用，肯定相等。
 
 '''
-l1= ['hello']
-l2= ['hello']
-l3= l1
-print(id(l1),id(l2) ,id(l3))
-print(l1 is l2,l2 is l3 ,l1 is l3)
-
+l1= ['hello1']
+l2= l1.copy()
+l1.append("word")
+print(id(l1),id(l2),"浅copy的对象id不一样")
+print(id(l1[0]),id(l2[0]),"通过切片copy对象，对原对象的新增子元素不会 新增" )
+l1[0]='hello2'
+print(l1 , l2)
+print(id(l1[0]),id(l2[0]),"通过切片copy对象，对原对象的子元素修改 会一起改变" )
+print(l1 , l2)
 print("-----------------")
 ''' 
-浅拷贝:  浅copy后，对象的内存地址，指的不是同一个内存地址。 子元素的id相同
+浅拷贝:  浅copy后，对象的内存地址，指的不是同一个内存地址。
 浅拷贝 只拷贝父对象，不会拷贝对象的内部的子对象
            浅拷贝后，对原父对象的子元素内容修改，copy的对象不变；
          #原对象进行新增子元素，copy的不变
             浅拷贝后，对原父对象的内部子元素增加,copy的对象也增加                                
 '''
-list0=[9,2,3,'4',[4.5,[4.55],4.6]]
-list1=list0.copy()
-print(id(list0),id(list1))
-print(list0,list1)
-print([id(el)for el  in list1])
-list0[0]=0
+list0=[99,2,3,'4',[4.5,[4.55],4.6]]
+list1=list0.copy()  #浅copy，地址值变了
+list0[1]=999
 list0[4][0]=38
 list0[4][1].append(4.66)
-list0.append(5)
-list0.remove(3)
-print(id(list0),id(list1))
 print(list0,list1)
 print([id(el)for el  in list0])
 print([id(el)for el  in list1])
@@ -87,7 +88,7 @@ print([id(el)for el  in list1])
 
 print("--------")
 '''
-深拷贝：深拷贝后的数据，对象的地址值不同，元素id相同
+深拷贝：深拷贝后的数据，对象的地址值不同。
         拷贝后，再对原对象做增加和修改时，拷贝的对象不做变化。
 
 
@@ -95,9 +96,40 @@ print("--------")
 
 list9=[1,2,'3',[4,[4.5],5],6,7]
 list8=copy.deepcopy(list9)
-print([id(el)for el  in list8])
-print([id(el)for el  in list9])
+print(id(list8) ,id(list9))
+print(list8,list9)
 list9[2]=0
+list9[3][0]=3.99
 list9.append(8)
-print([id(el)for el  in list9])
-print([id(el)for el  in list8])
+print(list8,list9,"深拷贝")
+print(id(list8),id(list9))
+print("==================")
+''' 引用
+python 在内存管理方面：元素是最小的单位,即每个对象都是由元素组成的,这个元素都复用的。
+             如一个元素字符a ，数字1,在 字符串 ab，数字19 中都被引用
+'''
+li1=[2,(1,2),'s']
+li2=[2,(1,2),'s']
+
+s1='b'
+c=li2
+li2.append(4)
+d=li2.copy()
+li2.append(5)
+e=copy.deepcopy(li2)
+li2.remove(4)
+print(id(li1[0]),id(li2[0]))
+print(id(li1[1]),id(li2[1]))
+print(id(li1[2]),id(li2[2]))
+print(id(li1),id(li2),id(c),id(d),id(e))
+print(c,d,e)
+import sys
+# del li1
+print(sys.getrefcount(li2))
+print(sys.getrefcount(li1))
+print(sys.getrefcount(1000000))
+print(sys.getrefcount('b'))
+cs=[1,2,3]
+se=cs
+dw=cs[:]
+print(id(cs),id(se),id(dw))

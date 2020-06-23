@@ -9,7 +9,7 @@ class MyThread(Thread):
             finally:
                mylock.release()
                try:
-                 if mylock2.acquire(2):
+                 if mylock2.acquire():
                      print("等待第二个的锁开开")
                finally:
                   mylock2.release()
@@ -24,7 +24,7 @@ class MyThread2(Thread):
             finally:
                   mylock2.release()
                   try:
-                    if mylock.acquire(2):
+                    if mylock.acquire():
                        print("等待第一个的锁开开")
                   finally:
                      mylock.release()

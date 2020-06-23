@@ -86,10 +86,13 @@ print(lt)
 yu=12
 '''  判断数字如果能被2整除，就+1 ，如果不能就把这个数处理3    '''
 c=(yu+1 if yu%2==0 else yu%3 )
+# java  num+1 ? num%2==0 : num/3
 print(c)
+
 '''  跟定一个数组，将小于5的数，都进行+5处理 '''
 l5=[1,2,5,6,7,7,4,2,0]
 w5=( i+5   for i in l5 if i <5  )
+
 print(w5)
 
 
@@ -99,4 +102,10 @@ b="ab"
 
 print(id(a),id(b))
 print(a is b)
+
+a=346%10
+print(a)
+
+
+
 

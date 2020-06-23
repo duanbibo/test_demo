@@ -128,6 +128,8 @@ z1=[1,2,3]
 z2=[4,5,6]
 print(list(zip(z1,z2)))
 print(dict(zip(z1,z2)))
+''' 压缩后可以利用工厂函数转换为字典'''
+print(dict(zip(z1,z2)).get(1))
 
 '''
      filter()也接收一个函数和一个序列，返回值也是一个迭代器。和map()不同的是，

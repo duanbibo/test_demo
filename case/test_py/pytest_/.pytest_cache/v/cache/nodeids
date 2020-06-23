@@ -1,0 +1,13 @@
+[
+  "ptest.py::test_add2[6-4]",
+  "ptest.py::test_add2[7-8]",
+  "ptest.py::Test_add::()::test_add[5+5:passed]",
+  "ptest.py::Test_add::()::test_add[6+4:passed]",
+  "ptest.py::Test_add::()::test_add[5+4:failed]",
+  "ptest.py::test_add[8-4]",
+  "ptest.py::test_add[1-0]",
+  "ptest.py::test_skip",
+  "ptest.py::test_fail_p[6-3]",
+  "ptest.py::test_fail_p[5-9]",
+  "ptest.py::test_fail_p[6-8]"
+]

@@ -61,7 +61,13 @@ re.compile
 '''
 pat=r"^1(([3578]\d)|(47))\d{8}$"
 re_telephon=re.compile(pat)   #编译后的正则表达式对象
+
 #使用的使用直接可以传参就可以
 print(re_telephon.match("13812345708"))
 print(re_telephon.search("13812345708"))
+
+
+
+
+
 
