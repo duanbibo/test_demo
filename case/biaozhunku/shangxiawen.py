@@ -46,6 +46,7 @@ with suppress(ZeroDivisionError):
       a=0/0
       print("已经抑制指定异常了")
       print(a)
+
 with open('source.txt','a',encoding='utf-8')as f:
       with redirect_stdout(f):
             help(callable)

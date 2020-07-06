@@ -133,9 +133,12 @@ for k in s:
 print(di)
 
 '''   求字典的hash地址'''
-d1={'key':'a1','key2':'a2'}
-d2={'key':'a3','key2':'a4'}
+d1={}
+d1['key1']=974
+d1['key2']='234'
+d1['key3']=973
+d1['key4']=975
+d1['key5']=909
+for i in d1:
+      print(i.__hash__()%8)
 
-str="key"
-str2='key2'
-print(str.__hash__(),str2.__hash__())
