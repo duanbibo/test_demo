@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -474,7 +474,7 @@
       <workItem from="1592921989148" duration="23419000" />
       <workItem from="1593423847918" duration="12843000" />
       <workItem from="1593656365608" duration="2611000" />
-      <workItem from="1594016337246" duration="3694000" />
+      <workItem from="1594016337246" duration="4319000" />
     </task>
     <task id="LOCAL-00001" summary="2020/06/15  2020-6-17 测试使用pycharm提交">
       <created>1592405119749</created>
@@ -553,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594130262418</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="7/7 测试钉钉机器人webhook 自动推送2">
+      <created>1594130694376</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1594130694376</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -589,7 +596,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="857714000" />
+    <option name="totallyTimeSpent" value="858339000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -719,7 +726,8 @@
     <MESSAGE value="2020/06/ 22测试pull2" />
     <MESSAGE value="7/6 ，设置Jenkins自动构建" />
     <MESSAGE value="7/7 测试钉钉机器人webhook 自动推送" />
-    <option name="LAST_COMMIT_MESSAGE" value="7/7 测试钉钉机器人webhook 自动推送" />
+    <MESSAGE value="7/7 测试钉钉机器人webhook 自动推送2" />
+    <option name="LAST_COMMIT_MESSAGE" value="7/7 测试钉钉机器人webhook 自动推送2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1196,7 +1204,7 @@
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
