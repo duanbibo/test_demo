@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45d8c186-1b05-4fe4-8ff2-004b1ff3d1a5" name="Default Changelist" comment="2020/06/ 22测试pull2">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/65b8f29b-077f-436b-964e-7484fc8b2ee8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/biaozhunku/Os.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/biaozhunku/0s.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/biaozhunku/shangxiawen.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/biaozhunku/shangxiawen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/biaozhunku/sy.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/biaozhunku/sy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/shujvjiegou/neicunguanli.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/shujvjiegou/zidian.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/shujvjiegou/zidian.py" afterDir="false" />
+    <list default="true" id="45d8c186-1b05-4fe4-8ff2-004b1ff3d1a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            <state relative-caret-position="54">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -277,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.my">
+  <component name="RunManager" selected="Python.run">
     <configuration name="Os" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test_demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -344,7 +336,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test_demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -352,12 +344,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/biaozhunku" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/biaozhunku/sy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -405,20 +397,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.sy" />
       <item itemvalue="Python.Os" />
       <item itemvalue="Python.neicunguanli" />
       <item itemvalue="Python.zidian" />
       <item itemvalue="Python.my" />
       <item itemvalue="Python tests.Unittests " />
+      <item itemvalue="Python.run" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
         <item itemvalue="Python.my" />
         <item itemvalue="Python.Os" />
         <item itemvalue="Python.zidian" />
         <item itemvalue="Python.neicunguanli" />
-        <item itemvalue="Python.sy" />
       </list>
     </recent_temporary>
   </component>
@@ -482,7 +474,7 @@
       <workItem from="1592921989148" duration="23419000" />
       <workItem from="1593423847918" duration="12843000" />
       <workItem from="1593656365608" duration="2611000" />
-      <workItem from="1594016337246" duration="826000" />
+      <workItem from="1594016337246" duration="3694000" />
     </task>
     <task id="LOCAL-00001" summary="2020/06/15  2020-6-17 测试使用pycharm提交">
       <created>1592405119749</created>
@@ -547,7 +539,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592761904182</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="7/6 ，设置Jenkins自动构建">
+      <created>1594017374072</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594017374072</updated>
+    </task>
+    <task id="LOCAL-00011" summary="7/7 测试钉钉机器人webhook 自动推送">
+      <created>1594130262418</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1594130262418</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -583,7 +589,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="854846000" />
+    <option name="totallyTimeSpent" value="857714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,19 +602,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85" visible="true" weight="0.28753352" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85" visible="true" weight="0.28753352" />
       <window_info id="Structure" order="1" sideWeight="0.15" side_tool="true" weight="0.32171583" />
       <window_info id="Favorites" order="2" sideWeight="0.10056657" side_tool="true" weight="0.30898124" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275488" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3427762" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.3427762" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40084985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" visible="true" weight="0.42776203" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.42776203" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.427157" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3796034" />
@@ -710,7 +717,9 @@
     <MESSAGE value="2020/06/19 测试本地修改后，远程去fetch时，是否影响 原有的数据2" />
     <MESSAGE value="2020/06/ 22测试pull" />
     <MESSAGE value="2020/06/ 22测试pull2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/06/ 22测试pull2" />
+    <MESSAGE value="7/6 ，设置Jenkins自动构建" />
+    <MESSAGE value="7/7 测试钉钉机器人webhook 自动推送" />
+    <option name="LAST_COMMIT_MESSAGE" value="7/7 测试钉钉机器人webhook 自动推送" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -807,6 +816,7 @@
     <SUITE FILE_PATH="coverage/test_demo$pytest_for_test_un_ureqinfo_TestRq_test_login.coverage" NAME="pytest for test_un.ureqinfo.TestRq.test_login Coverage Results" MODIFIED="1586418536299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/test_demo$t_log.coverage" NAME="t_log Coverage Results" MODIFIED="1589166225181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/log" />
     <SUITE FILE_PATH="coverage/test_demo$login.coverage" NAME="login Coverage Results" MODIFIED="1589466589190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/interface" />
+    <SUITE FILE_PATH="coverage/test_demo$run.coverage" NAME="run Coverage Results" MODIFIED="1594101972313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test_demo$sched__1_.coverage" NAME="sched (1) Coverage Results" MODIFIED="1590548566717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/dingshi" />
     <SUITE FILE_PATH="coverage/test_demo$utest.coverage" NAME="utest Coverage Results" MODIFIED="1585813167087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/test_un" />
     <SUITE FILE_PATH="coverage/test_demo$readSuit.coverage" NAME="readSuit Coverage Results" MODIFIED="1587535265722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/Work/python/ApiTestFrameWork/core" />
@@ -1185,8 +1195,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        <state relative-caret-position="54">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
