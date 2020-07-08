@@ -14,7 +14,7 @@ headers = {
 body={
       "msgtype": "text",
       "text": {
-            "content": "测试执行成功，查看测试报告，http://121.36.102.233:8080/"
+            "content": "测试执行成功，查看测试报告，http://121.36.102.233:8090/"
       }
 }
 r=requests.request("post",url=url,headers=headers,json=body)
