@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45d8c186-1b05-4fe4-8ff2-004b1ff3d1a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/case/tool/dingding.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,11 +84,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/tool/dingding.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Desktop/Work/python/ApiTestFrameWork/report/2020-04-22_14_55_49_report.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -145,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/case/xiancheng/celer.py" />
         <option value="$PROJECT_DIR$/case/xiancheng/sched.py" />
         <option value="$PROJECT_DIR$/case/xiancheng/schedredis.py" />
         <option value="$PROJECT_DIR$/case/dingshi/aps.py" />
@@ -196,14 +214,15 @@
         <option value="$PROJECT_DIR$/case/biaozhunku/shangxiawen.py" />
         <option value="$PROJECT_DIR$/case/biaozhunku/Os.py" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/case/tool/dingding.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+    <option name="x" value="-17" />
+    <option name="y" value="45" />
+    <option name="width" value="1937" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,11 +237,6 @@
             <path>
               <item name="test_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="test_demo" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="test_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test_demo" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="test_demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -268,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.dingding">
     <configuration name="Os" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test_demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,6 +305,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="dingding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test_demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/tool" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/tool/dingding.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="my" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test_demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,28 +341,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/SQL/my.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="neicunguanli" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test_demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/shujvjiegou" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/shujvjiegou/neicunguanli.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -397,19 +411,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Os" />
-      <item itemvalue="Python.neicunguanli" />
       <item itemvalue="Python.zidian" />
       <item itemvalue="Python.my" />
       <item itemvalue="Python tests.Unittests " />
       <item itemvalue="Python.run" />
+      <item itemvalue="Python.dingding" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dingding" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.my" />
         <item itemvalue="Python.Os" />
         <item itemvalue="Python.zidian" />
-        <item itemvalue="Python.neicunguanli" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +487,7 @@
       <workItem from="1592921989148" duration="23419000" />
       <workItem from="1593423847918" duration="12843000" />
       <workItem from="1593656365608" duration="2611000" />
-      <workItem from="1594016337246" duration="4975000" />
+      <workItem from="1594016337246" duration="7879000" />
     </task>
     <task id="LOCAL-00001" summary="2020/06/15  2020-6-17 测试使用pycharm提交">
       <created>1592405119749</created>
@@ -566,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594132926670</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="7/7 测试jenkins 与github的webhook  自动构建">
+      <created>1594134030830</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1594134030830</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -602,7 +623,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="858995000" />
+    <option name="totallyTimeSpent" value="861899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,18 +637,18 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85" visible="true" weight="0.28753352" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85" visible="true" weight="0.33512065" />
       <window_info id="Structure" order="1" sideWeight="0.15" side_tool="true" weight="0.32171583" />
       <window_info id="Favorites" order="2" sideWeight="0.10056657" side_tool="true" weight="0.30898124" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275488" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.3427762" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.35977337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40084985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" visible="true" weight="0.42776203" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.42776203" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.427157" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3796034" />
@@ -826,6 +847,7 @@
     <SUITE FILE_PATH="coverage/test_demo$zhuanhuan.coverage" NAME="zhuanhuan Coverage Results" MODIFIED="1586674248609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/test_un" />
     <SUITE FILE_PATH="coverage/test_demo$read_e.coverage" NAME="read_e Coverage Results" MODIFIED="1589179397188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/test_un" />
     <SUITE FILE_PATH="coverage/test_demo$zhujie.coverage" NAME="zhujie Coverage Results" MODIFIED="1590393501520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/hanshu" />
+    <SUITE FILE_PATH="coverage/test_demo$dingding.coverage" NAME="dingding Coverage Results" MODIFIED="1594135721885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/tool" />
     <SUITE FILE_PATH="coverage/test_demo$db.coverage" NAME="db Coverage Results" MODIFIED="1591339735658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/tool" />
     <SUITE FILE_PATH="coverage/test_demo$pytest_for_test_un_ureqinfo_TestRq_test_login.coverage" NAME="pytest for test_un.ureqinfo.TestRq.test_login Coverage Results" MODIFIED="1586418536299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/test_demo$t_log.coverage" NAME="t_log Coverage Results" MODIFIED="1589166225181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/log" />
@@ -893,20 +915,6 @@
     <SUITE FILE_PATH="coverage/test_demo$xiancheng.coverage" NAME="xiancheng Coverage Results" MODIFIED="1590074288067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/xiancheng" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/234761598/sys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="178" column="4" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/_pytest/fixtures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="862" column="4" selection-start-line="862" selection-start-column="4" selection-end-line="862" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/Work/CICD2/case/biaozhunku/0s.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1210,7 +1218,21 @@
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/tool/dingding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Work/python/ApiTestFrameWork/report/2020-04-22_14_55_49_report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
