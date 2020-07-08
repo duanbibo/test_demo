@@ -1,5 +1,6 @@
 import requests
 
+#自定义钉钉机器人的url
 url="https://oapi.dingtalk.com/robot/send?access_token=878e9edb2c45ef7aab6024d64c76120a1397991e9d07fca14853ff6e5b61e659"
 
 headers = {
