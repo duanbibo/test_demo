@@ -1,2 +1,0 @@
-#mock
-import mock

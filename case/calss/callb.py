@@ -4,6 +4,7 @@ def first(a):
       print("zzzz",a)
 first(inp())
 print(inp.__dir__())
+
 class  c(object):
       def __init__(self,name):
             self.name=name

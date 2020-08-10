@@ -29,4 +29,15 @@ print(sys.path)
 #print(sys.modules)
 
 
+''' 模块的自省'''
+
+neixing1=f.bianliang
+neixing2=f.__dict__['bianliang']
+neixing3=sys.modules['sys'].api_version
+neixing4=getattr(f,'bianliang')
+
+print(neixing1)
+print(neixing2)
+print(neixing3)
+print(neixing4)
 

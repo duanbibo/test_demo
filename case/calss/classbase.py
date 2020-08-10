@@ -13,19 +13,11 @@ class  Base(object):
         # """ 定义静态方法 ，无默认参数"""
         print('静态方法',sta)
 
-  def  __init__(self,name,age,*adress,**kwargs):
+  def  __init__(self,name,age,adress=99):
         print("构造方法先执行")
-        '''
-        构造函数  :python的构造函数不必调用成员变量
-        :param name:  姓名 不为空
-        :param age: 年龄不为空
-        :param adress:  地址可以为空，有默认值
-        :param kwargs:   其他字段可以填写的
-        '''
         self.name=name
         self.age=age
-        self.adress=0
-        self.tel=110
+        self.adress=88
         print("父类构造方法执行完毕--")
 
 
@@ -36,7 +28,7 @@ class  Base(object):
 
   def info(self): #普通方法
         print("实例方法")
-        print(self.name,self.age,self.adress,self.tel,"is a good  boby")
+        print(self.name,self.age,self.adress,"is a good  boby")
 
 
   def update_attry(self,updatevalue):
@@ -47,7 +39,7 @@ class  Base(object):
              self.原参数+=传参的值 ，达到每次进行递增
         '''
         #在修改原参数值的时候，做一次判断更合理
-        if updatevalue>=self.adress:
+        if int(updatevalue)>=self.adress:
            self.adress=updatevalue
         else:
             print("无需修改")
@@ -57,15 +49,14 @@ class  Base(object):
         print("im baba")
 
 class Son(Base):
+      ss='ss'
 
-      # def __init__(self,name,out):
-      #       self.name=name
-      #       self.out=out
-      def __init__(self,name,age,myself=None):
+
+      def __init__(self,name,age,adress,myself):
+            super(Son, self).__init__(name,age,adress)
+
             print("开始执行子类的构造方法")
             print("先去继承父类的构造方法区")
-            super(Base,self).__init__(name, age)
-            #Base.__init__(name,age)
 
             self.__myself=myself
             print("子类的构造方法--执行完毕")
@@ -74,6 +65,8 @@ class Son(Base):
       def update_attry(self,ab):
             # 重写父类的实例方法
            Base.update_attry(self,ab)
+           print(self.ss,Son.ss)
+
            #super(Son, self).update_attry(ab)    #调用父类方法
 
       def im(self):
@@ -104,7 +97,7 @@ class Son(Base):
 
 
 
-a=Base("zhangsan",18)      #只要创建对象，就调用构造方法
+a=Base("zhangsan",18,99)      #只要创建对象，就调用构造方法
 
 a.home="house"  # 动态语言，可以在程序运行之中添加属性
 print(a.home)  #添加的动态方法可以输出
@@ -112,7 +105,7 @@ print(a.home)  #添加的动态方法可以输出
 a.info()           #  等同于  Base.info(a)   ==   a.info()
 a.update_attry(-1)
 a.info()
-info(Base())
+
 
 print("--------")
 
@@ -122,8 +115,12 @@ print("--------")
 Base.class_func()  # 通过类直接调用类方法，不需要实例化对象
 Base.static_func(2)  #通过类可以直接调用静态方法，不需要实例化对象
 print("=============")
-s=Son('老王',3,"父类的构造方法")     #只要创建对象，就调用构造方法
+s=Son('老王',3,15,"我自己的")     #只要创建对象，就调用构造方法
+
 s.update_attry(40)
+print(s.myself)
+s.myself="我通过属性修改的"
+print(s.myself)
 
 
 

@@ -32,7 +32,7 @@ print(order)
               利用具名元祖的指定的参数列表的构造器添加。  推荐使用make方法
             _asdict方法：将具名元祖转换为有序字典OrderDict。
 '''
-city=collections.namedtuple('city','name  jvli   play   price   pingjia  ')
+city=collections.namedtuple('City','name  jvli   play   price   pingjia  ')
 #利用具名元祖返回的函数，添加单条数据，相当于走的是构造器按照每个字段赋值
 beijing=city('gugong','888km','guanjing',50,'yiban')
 print(beijing,"利用具名函数的构造器添加的数据")

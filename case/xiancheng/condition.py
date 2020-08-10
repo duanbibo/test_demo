@@ -2,6 +2,7 @@
 
 import threading,time
 from random import randint
+
 class Producer(threading.Thread):
     def run(self):
         global L

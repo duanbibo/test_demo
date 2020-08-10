@@ -23,13 +23,15 @@ class base():
       def getx(self):
             return self.name
 
+
+
       def setx(self, value):
             self.name = value
 
       def delx(self):
             del self.name
 
-      # create a property
+      # create a property，第一参数为属性的get ，set， del  方法。
       x = property(getx, setx, delx, "I am doc for x property")
 
       def upname(self ,v):
@@ -88,6 +90,7 @@ print(base2.bb,base2._b2)
 
 print(base2.class_method(),base2.static_method())
 print("-----------base2 over--")
+
 class fa(base,base2):
 
       def __init__(self,name,age,score):
@@ -97,7 +100,7 @@ class fa(base,base2):
             self.score=score
             print("我是父类构造函数")
 
-            #子类覆写父类的方法，
+       #子类覆写父类的方法，
       def info(self,x):
             self.age = self.age - x
 
@@ -111,6 +114,7 @@ f._age+=6
 print(fa.na,fa._age)
 #子类实例默认调用自己内部的方法
 f.info(4)
+
 #以下两种是调用父类被覆写的方法
 super(fa,f).info(8)
 base.info(f,7)
@@ -120,5 +124,33 @@ help(f)
 
 
 print(f.__hash__())
+
+
+if __name__ == '__main__':
+    '''利用内省获取类实例的方法  '''
+    b=base(24,'oo')
+    #将所有的属性进行遍历，返回类型是一个字典，
+    i=b.__dict__.items()
+    l=list(i)
+    print("输出dict的结果")
+    print(i)
+    print(l)
+    for name,age in l:
+          print(name,age)
+    #getattr(b,)
+    setattr(b,"add","北京")
+
+    #使用类型，function获取方法的内省信息
+    print(base.info.__code__)
+    #通过实例和类调用的 __dict__返回的结果是不同的，通过类名调用返回的是一个字段，内容为类的命名空间内容
+
+    print(b.__dict__,"实例字典")
+    #通过实例调用__dict__返回的是类的属性。
+    print(base.__dict__,"类字典")
+    print(globals(),"globals")
+    print(dir(b),"dir(b)")
+    print(dir(base),"dir(base)")
+    print(b.__dir__(), "b.__dir__()")
+
 
 

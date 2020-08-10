@@ -11,6 +11,7 @@ print(cur_path,file_path)
 with open(file_path ,'r',encoding="utf-8" ,)as j:
       data=json.load(j)
       print(data,type(data))
+
 #dumps 处理将字典类型转换为str字符串,由于在内存存储，展示的中文值为
 s= json.dumps(data)
 print(s,type(s))
@@ -22,6 +23,6 @@ print(d,type(d))
 #dump 将字典对象存储到文件中，接受2个参数，第一个为对象第二个为文件对象
 with open( "package.json","a",encoding='utf-8')as fw:
       stu=json.dump(d,fw,ensure_ascii=False)
-      print(stu)
+
 
 
