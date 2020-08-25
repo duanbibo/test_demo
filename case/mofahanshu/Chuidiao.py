@@ -1,6 +1,9 @@
 
 
 class  Reader:
+      '''
+      文档说明
+      '''
 
       count=0
 
@@ -19,3 +22,4 @@ class  Reader:
 if __name__ == '__main__':
     a=Reader('张三','中国')
     a('Nice')
+    print(a.__doc__)

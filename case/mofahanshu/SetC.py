@@ -15,7 +15,7 @@ class Setclass1:
 
 
       def concat(self,value):
-            '''  这个方法主要来处理列表元素校验，进行去重'''
+            '''  这个方法主要来处理列表元素校验，进行去重，核心还是利用了关键字 in对应的魔法方法  __contain__'''
             for x in value:
                   if not x in self.data:
                         self.data.append(x)

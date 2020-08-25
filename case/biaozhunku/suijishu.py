@@ -25,14 +25,14 @@ print(tel)
 
 #random.sample( 字符串，长度)   从迭代对象中依次生成指定个数的随机数
 s=random.sample("1234567890",2)
-print(s,"sssssssssss")
+print(s,"sample产生指定可迭代对象的多个数字")
 
 #randrange ,指定生成的数字符合一定的步长
 si=random.randrange(0,99,4)
-print(si)
+print(si," randrange:生成指定范围的数字，生成的数字符合步长")
 
 #choices:从任何类型中选择一个数据，返回一个列表
-anytype=[0,(3,4)]
+anytype=[0,(3,4),6,4,2]
 any=random.choices(anytype)
 print(any)
 

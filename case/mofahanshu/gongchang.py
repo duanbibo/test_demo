@@ -1,3 +1,11 @@
+
+
+'''
+
+这个工厂函数，第一个参数是类名，其余参数是类相关的参数，延迟加载。
+'''
+
+
 def factory (aClass,*args):
       return aClass(*args)
 

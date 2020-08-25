@@ -47,6 +47,7 @@ d={
                 {
                         "id": 2067,
                         "name": "小黑",
+
                         "sex": "男",
                         "age": 28,
                         "addr": "河南省济源市北海大道32号",
@@ -85,15 +86,19 @@ res5=jsonpath.jsonpath(d,'*')   # 匹配整个json字符串的value值，以及�
 print(res5)
 
 res6=jsonpath.jsonpath(d,'$.stu_info[(@.length-1)]') #求 最后一个的子节点
-print(res6,type(res6))
+print(res6,type(res6),"#求 最后一个的子节点")
 print("----------------------")
-resa=jsonpath.jsonpath(d,'$..stu_info[?(@.gold>100)]..gold') #返回一个子元素，要求这个子元素的值符合一定的条件
+resa=jsonpath.jsonpath(d,'$..stu_info[?(@.gold>100)]..gold')
+#返回一个子元素，要求这个子元素的值符合一定的条件
 print(resa)
-res7=jsonpath.jsonpath(d,'$..stu_info..[?(@.gold>100)]')#返回一个子节点，整个子节点的下属节点的值符合一定条件
+res7=jsonpath.jsonpath(d,'$..stu_info..[?(@.gold>100)]')
+#返回一个子节点，整个子节点的下属节点的值符合一定条件
 print(res7,"0000000000")
-res8=jsonpath.jsonpath(d,'$..stu_info[?(@.length>8)]..id')#返回子节点，要求同类节点的数量必须大于8个
+res8=jsonpath.jsonpath(d,'$..stu_info[?(@.length>8)]..id')
+#返回子节点，要求同类节点的数量必须大于8个
 print(res8)
-res9=jsonpath.jsonpath(d,'$..stu_info[?(@.id>2050)]..id')#返回子节点，要求子节点的值必须的范围
+res9=jsonpath.jsonpath(d,'$..stu_info[?(@.id>2050)]..id')
+#返回子节点，要求子节点的值必须的范围
 print(res9)
 print(res9[1],'1111111111111')
 print((res7[0]).get("id"))  #根据返回值进行获取
@@ -114,13 +119,13 @@ xiangmu=os.path.abspath(os.path.join(os.path.dirname(__file__),os.pardir,os.pard
 jsonfile=os.path.join(xiangmu,"read/package.json")
 
 print(jsonfile)
-with open(jsonfile,"r",encoding='utf-8')as f:
-        all=f.read()
-        #print(type(all))    str
-        r = json.loads(all)
-        print(type(r),"格式为")  # dict
-        # zj=json.load(f)
-        '''
+# with open(jsonfile,"r",encoding='utf-8')as f:
+#         all=f.read()
+#         #print(type(all))    str
+#         r = json.loads(all)
+#         print(type(r),"格式为")  # dict
+#         # zj=json.load(f)
+'''
     从其他文件读取出来的数据是字符串类型,是不能够进行使用的，需要用 转换为数据类型，
      解析后使用，才能够用jsonpath进行匹配
      1.第一种方式： json.load(file) ：直接将文件载入，转换数据类型。转换格式为数据的结构
@@ -134,24 +139,24 @@ with open(jsonfile,"r",encoding='utf-8')as f:
 
 # quanbu= jsonpath.jsonpath(zj,'*')
 # print(quanbu,type(quanbu))
-print("-----------")
-quanbu2= jsonpath.jsonpath(r,'*')
-print(quanbu2,type(quanbu2))
-print("---"*20)
-
-zi=jsonpath.jsonpath(r,'$..stu_info[?(@.id==2067)]..id')
-print(zi)
+# print("-----------")
+# quanbu2= jsonpath.jsonpath(r,'*')
+# print(quanbu2,type(quanbu2))
+# print("---"*20)
+#
+# zi=jsonpath.jsonpath(r,'$..stu_info[?(@.id==2067)]..id')
+# print(zi)
 
 
 '''           json的扩展方法'''
 '''     将字典类型的数据转化为字符串'''
-stringj=json.dumps(r)
-print(stringj,type(stringj))
-print("+++"*20)
+# stringj=json.dumps(r)
+# print(stringj,type(stringj))
+# print("+++"*20)
 
 '''        json .dumps 直接写入文件中'''
-file = open('1.json', 'w', encoding='utf-8')
-jfile=json.dump(quanbu2,file)
+# file = open('1.json', 'w', encoding='utf-8')
+# jfile=json.dump(d,file)
 
 
 

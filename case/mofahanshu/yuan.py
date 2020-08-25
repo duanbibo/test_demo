@@ -33,6 +33,8 @@ class  MetaOne(type):
 class Eggs:
       pass
 
+
+
 print("making class")
 class  Spam(Eggs,metaclass=MetaOne):
       '''在运行到class处，如果当前类使用了声明的元类，就直接进入元类去执行__new__'''

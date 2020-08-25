@@ -19,6 +19,7 @@ class diedai:
             return self
 
       def __next__(self):
+            '''进行迭代的时候必须引发异常，进行停止迭代。'''
             if self.value==self.stop:
                   raise StopIteration
             else:
@@ -26,6 +27,9 @@ class diedai:
             return  self.value
 
 
+'''
+委托代理
+'''
 class  diedaier:
 
       def __iter__(self):

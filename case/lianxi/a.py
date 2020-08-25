@@ -76,3 +76,16 @@ print('\n'.join([' '.join(['%2d *%2d = %2d' % (col, row, col * row)
                            for col in range(1, row + 1)]) for row in range(1, 10)]))
 
 jiujiu=( '\n'.join([ ''.join(['%2d *%2d =%2d'%(col,row,col*row)for col in range(1,row+1)])for row in range(1,10)]))
+
+
+'''
+自定义类，继承字典，添加魔法函数 missing
+'''
+class m(dict):
+
+      def __missing__(self, key):
+            return  '{'+'key'+'}'
+
+
+m={'key1':1}
+print('{key1}'.format_map(m(vars())))

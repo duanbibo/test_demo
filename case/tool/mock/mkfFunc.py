@@ -1,5 +1,5 @@
 #mock
-from mock import  Mock
+
 import unittest
 from unittest import  mock
 
@@ -35,14 +35,14 @@ class TestSub(unittest.TestCase):
             self.assertEqual(result,2)
       def test_sub(self):
 
-            #创建mock类的实例
+            #创建待mock类的实例
             sub=SubClass()
 
-            #调用mock库的Mock类创建实例。  类实例.函数=mock(函数的返回值)
+            #调用mock库的Mock类创建实例。  类实例.mock的func=mock(函数的返回值)
 
                             #当它为
             sub.add=mock.Mock(return_value=10)
-            #调用mock方法，传入实参
+            #通过实例调用方法，传入参数。实际调用的还是mock的方法，传入实参
             result=sub.add(5,5)
             self.assertEqual(result,10)
 
